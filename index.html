@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMA CONTABLE</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>FACTURACIÓN</h1><br><hr>
+
+  <form>
+    <label for="obraSocial">Obra Social:</label><br>
+    <input type="text" id="obraSocial" name="obraSocial"><br><br>
+
+    <label for="numeroFactura">Número de factura:</label><br>
+    <input type="number" id="numeroFactura" name="numeroFactura"><br><br>
+
+    <label for="mes">Mes correspondiente:</label><br>
+    <input type="text" id="mes" name="mes"><br><br>
+
+    <label for="monto">Monto ingresado:</label><br>
+    <input type="number" id="monto" name="monto"><br><br>
+
+    <button type="button" class="enviar-btn">INGRESAR FACTURA</button><br><br>
+  </form><hr>
+
+  <form id="formularioPago">
+    <label for="obraSocialPago">Obra Social:</label><br>
+    <input type="text" id="obraSocialPago" name="obraSocialPago"><br><br>
+
+    <label for="pago">Nro. de la factura pagada:</label><br>
+    <input type="number" id="pago" name="pago"><br><br>
+
+    <button type="button" id="enviar-pago">INGRESAR PAGO</button><br>
+
+  </form><hr>
+
+  <div class="visualizacion">
+    <h3>FACTURAS:</h3>
+    <h3>DEUDA:</h3>
+  </div>
+  
+  <div class="grid-container">
+    <div class="grid-item facturas"><ul></ul></div> 
+    <div class="grid-item montoAdeudado"><ul></ul></div> 
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
