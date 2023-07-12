@@ -45,8 +45,6 @@ class Deuda {
     montoAdeudado.appendChild(lista6);
     montoAdeudado.appendChild(lista7);
     montoAdeudado.appendChild(lista8);
-    
-
   }
 }
 
@@ -74,11 +72,8 @@ class Facturacion {
     facturas.appendChild(lista2);
     facturas.appendChild(lista3);
     facturas.appendChild(lista4);
-
-   
   }
 }
-
 
 let deuda = null;
 //aplico evento al boton ingresar:
@@ -142,10 +137,7 @@ ingresarBtn.addEventListener("click", function() {
       deudasGeneradas.push(deudaExistente);
     }
 
-    
-
     limpiarDeuda();
-
     deudasGeneradas.forEach(deuda => deuda.deudaAcumulada());
   }
 
@@ -153,8 +145,6 @@ ingresarBtn.addEventListener("click", function() {
   console.log("Facturas ingresadas:", facturasIngresadas);
   console.log("Deudas generadas:", deudasGeneradas);
 })
-
-
 
 //funciones
 function vaciarArray() {
@@ -169,9 +159,6 @@ function limpiarDeuda() {
     montoAdeudado.removeChild(montoAdeudado.firstChild);
   }
 }
-
-
-// ...
 
 // Función para actualizar la interfaz
 function actualizarInterfaz() {
@@ -288,8 +275,6 @@ function init() {
   }
 }
 
-
-
 // Función para guardar los datos en el localStorage
 function guardarDatosEnLocalStorage() {
   localStorage.setItem('facturasIngresadas', JSON.stringify(facturasIngresadas));
@@ -310,6 +295,3 @@ function recuperarDatosDelLocalStorage() {
 // Llamar a la función de recuperar datos al cargar la página
 window.addEventListener('load', recuperarDatosDelLocalStorage);
 
-/*
-
-*/
